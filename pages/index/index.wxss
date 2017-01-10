@@ -1,0 +1,10 @@
+/**index.wxss**/
+.dragbox{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%;
+  background: #ccc;
+  position: absolute; 
+  bottom: 240px; 
+  right: 100px; 
+}

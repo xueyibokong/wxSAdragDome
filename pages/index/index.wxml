@@ -1,0 +1,3 @@
+<!--index.wxml-->
+<view class="dragbox" bindtap="ballClickEvent" style="bottom:{{ballBottom}}px;right:{{ballRight}}px;" bindtouchmove="ballMoveEvent">  
+</view> 
