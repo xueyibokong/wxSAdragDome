@@ -1,17 +1,17 @@
-<view class="container">
-  <scroll-view class="card-list" wx:for="{{cardlist}}">
+<scroll-view scroll-y="true">
+  <view class="card-list" wx:for="{{cardlist}}">
      <view class="card">
-        <view id="{{index}}" style="background:{{item.cardColor}};right:{{item.right}}px" bindtouchstart="startCardItem" bindtouchmove="moveCardItem" bindtouchend="endCardItem" class="card-back {{item.open?'open':'close'}}">
+        <view id="{{index}}" style="background:{{item.cardColor}};right:{{item.right}}px;transition:{{item.transition}}" bindtouchstart="startCardItem" bindtouchmove="moveCardItem" bindtouchend="endCardItem" class="card-back {{item.open?'open':'close'}}">
             <image class="icon" src="{{item.cardImage}}"></image>
             <view class="textbox">
                 <text class="intext">{{item.cardName}}</text>
                 <text class="intext">{{item.cardType}}</text>
-                <text class="intext">{{item.cardNum}}</text>
+                <text class="intext">**** **** **** {{item.cardNum}}</text>
             </view>
         </view>
         <view class="cardafter" bindtap="deleteItem" id="{{index}}">
             <image src="/image/trash.png" style="width:76rpx;height:76rpx;"></image>
         </view>
      </view>
-  </scroll-view>
-</view>
+  </view>
+</scroll-view>
