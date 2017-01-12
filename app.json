@@ -1,7 +1,6 @@
 {
   "pages":[
-    "pages/drag/drag",
-    "pages/index/index"
+    "pages/drag/drag"
   ],
   "window":{
     "backgroundTextStyle":"light",
